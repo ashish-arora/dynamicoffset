@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+	{% block page_title %} Okvee Bootstrap sidebar menu {% endblock page_title %}
+        {% block javascript %} 
+        <meta charset="utf-8">
+       <!-- <title>Okvee Bootstrap sidebar menu</title>-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         
+        <!--bootstrap css-->
+        <link href="/static/media/css/bootstrap.css" rel="stylesheet">
+        <!--bootstrap responsive css-->
+        <link href="/static/media/css/bootstrap-responsive.css" rel="stylesheet">
+         
+        <!--Okvee Bootstrap sidebar menu-->
+        <link href="/static/media/css/obsm.css" rel="stylesheet">
+        <!--OBSM responsive css-->
+        <link href="/static/media/css/obsm-responsive.css" rel="stylesheet">
+         
+        <!--demo page style-->
+        <link href="/static/media/css/demo1.css" rel="stylesheet">
+         
+        <!--jquery cdn-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+         
+        <!--Okvee Bootstrap sidebar menu js-->
+        <script src="/static/media/js/obsm.js"></script>
+         
+        <!--add html5 support for ancient browser like IE.-->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+         
+    {% endblock javascript %}
+   {% block content %} 
+                <div style="clear:both;">&nbsp;</div>
+        <div style="clear:both;">&nbsp;</div>
+        <div style="clear:both;">&nbsp;</div>
+        <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <!--<li class="nav-header"><a href="/Brochures">Brochures</a></li>-->
+              <li><a href="/Brochures">Brochures</a></li>
+              <li><a href="/Business-Cards">Business Cards</a></li>
+              <li class="active"><a href="/Magzines_Booklets">Magzines & Booklets</a></li>
+              <li><a href="/Coporate-Stationery">Corporate Stationery</a></li>
+              <li><a href="/Envelopes">Envelopes</a></li>
+              <li><a href="/Folder-Cover">Folder Cover & Inserts</a></li>
+              <li><a href="/LetterHeads">LetterHeads & 'With Comps'</a></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+
+
+		<div class="span9">
+                    <div class="content-wrapper">
+                        <h1>Brochures & Flyers</h1>
+ 			<div class="box-1" style="padding-top:10px;"><span class="orange_bigger_bold">Use colour</span> <span class="green_bigger_bold">-  colour</span> <span class="blue_bigger_bold">stands out</span><br />
+                        <p>Catalog printing or Booklet printing are terms used interchangeably. Either way, when you can&#8217;t fit it all on a single sheet, it&#8217;s time to consider Catalog printing or Booklet printing.</p>
+<p><img style="float: right;" src="/static/media/img/magazines.png" alt="" /></p>
+<ul>
+<li>4, 8, 12, 24, 32 or 48 pages or other no. of pages available</li>
+<li>A4, A5, DL, A6 – Postcard or any Custom size</li>
+<li>Stock 80/90, 115, 130, 150, 200gsm with an option of hard covers and matt or gloss lamination or varnishing available</li>
+</ul>
+<p>We have a few different options of binding available on-site:</p>
+<p><strong>Saddle stitched:</strong><br />
+Stapled through the centre on the fold line Usually a limit of 160 pages</p>
+<p><strong>Perfect binding:</strong><br />
+The edges of the sheets are glued to the cover Books that are over 24 pages are suitable for this method</p>
+<p><strong>Plastic strip or spiral binding:</strong><br />
+Holes drilled through where strip will be secured Keep the margins in mind when designing</p>
+<p>We provide <strong>Magazine Printing</strong> in Sydney that offers high quality, color, expert <strong>magazine printing services</strong>. <strong><em>Magazine Printing</em></strong> includes paper, color, cover, quantities. Booklet Printing ensures that the project will look as envisioned. Whereas <strong>Booklet Printing</strong> ensures that the project is handled with the utmost professionalism and technical skill.</p>
+                         
+                    </div>
+                </div>
+                <div class="span12">
+                    <div class="footer-bar"><a href="http://www.okvee.net">O</a><a href="http://twitter.github.com/bootstrap/">B</a>SM.</div>
+                </div>
+            </div><!--.row-->
+        </div><!--.container-->
+         
+         
+        <script>
+            $(function() {
+                // activate the OBSM sub-menu icon
+                $('.obsm').obsm();
+            });
+        </script>
+         
+         
+    {% endblock content %}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+	{% block page_title %} Okvee Bootstrap sidebar menu {% endblock page_title %}
+        {% block javascript %} 
+        <meta charset="utf-8">
+       <!-- <title>Okvee Bootstrap sidebar menu</title>-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         
+        <!--bootstrap css-->
+        <link href="/static/media/css/bootstrap.css" rel="stylesheet">
+        <!--bootstrap responsive css-->
+        <link href="/static/media/css/bootstrap-responsive.css" rel="stylesheet">
+         
+        <!--Okvee Bootstrap sidebar menu-->
+        <link href="/static/media/css/obsm.css" rel="stylesheet">
+        <!--OBSM responsive css-->
+        <link href="/static/media/css/obsm-responsive.css" rel="stylesheet">
+         
+        <!--demo page style-->
+        <link href="/static/media/css/demo1.css" rel="stylesheet">
+         
+        <!--jquery cdn-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+         
+        <!--Okvee Bootstrap sidebar menu js-->
+        <script src="/static/media/js/obsm.js"></script>
+         
+        <!--add html5 support for ancient browser like IE.-->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+         
+    {% endblock javascript %}
+   {% block content %} 
+	<div style="clear:both;">&nbsp;</div>
+        <div style="clear:both;">&nbsp;</div>
+        <div style="clear:both;">&nbsp;</div>
+        <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <li class="nav-header"><a href="/Brochures">Brochures</a></li>
+              <li class="active"><a href="/Brochures">Brochures</a></li>
+              <li><a href="/Business-Cards">Business Cards</a></li>
+              <li><a href="/Carbonless-Books">Carbonless Books & Forms</a></li>
+              <li><a href="/Coporate-Stationery">Corporate Stationery</a></li>
+              <li><a href="/Envelopes">Envelopes</a></li>
+              <li><a href="/Folder-Cover">Folder Cover & Inserts</a></li>
+              <li><a href="/LetterHeads">LetterHeads & 'With Comps'</a></li>
+              <li class="nav-header">Sidebar</li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li class="nav-header">Sidebar</li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+              <li><a href="#">Link</a></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+
+        <div class="span9">
+
+                    <div class="content-wrapper">
+                        <h1>Brochures & Flyers</h1>
+ 			<div class="box-1" style="padding-top:10px;"><span class="orange_bigger_bold">Use colour</span> <span class="green_bigger_bold">-  colour</span> <span class="blue_bigger_bold">stands out</span><br />
+			<div style="clear:both;">&nbsp;</div>
+                  	<p><img style="float: right;" src="/static/media/img/businesscards.jpg" alt="" />
+                        <p>Business cards are often your first point of contact with a potential client. Don&#8217;t settle for black and white when full colour business cards are so affordable. Your colour business card will say to everyone that you&#8217;re serious about what you do. We also offer the option to print both sides if needed. So for the best in online colour business card printing, give us a try or give us a call if you need help.</p>
+</p>
+<p class="big_bold">Making a good first impression is important and your business card must reflect a quality image. </p>
+<ul>
+<li>Full colour one or both sides</li>
+<li>Different finishes: Plain, Gloss laminated front and back,  or  Matt Laminate front &#038; back</li>
+<li>Quality 310 gsm or 400 gsm bulk board  cards</li>
+</ul>
+<p><strong>Business cards</strong> are bearing business information about a company or individual. <strong>Business Cards Printing</strong> is done on some form of card stock. We also deals in banner stands, signs, letterhead and fridge magnets that go with the business card design. <strong>Print Business Cards</strong> come in various shapes, sizes and finishes and include color logos, graphics and images. </p> 
+                    </div>
+                </div>
+                <div class="span12">
+                    <div class="footer-bar"><a href="http://www.okvee.net">O</a><a href="http://twitter.github.com/bootstrap/">B</a>SM.</div>
+                </div>
+            </div><!--.row-->
+        </div><!--.container-->
+         
+         
+        <script>
+            $(function() {
+                // activate the OBSM sub-menu icon
+                $('.obsm').obsm();
+            });
+        </script>
+         
+         
+    {% endblock content %}

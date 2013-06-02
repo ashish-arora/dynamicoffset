@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+	{% block page_title %} Okvee Bootstrap sidebar menu {% endblock page_title %}
+        {% block javascript %} 
+        <meta charset="utf-8">
+       <!-- <title>Okvee Bootstrap sidebar menu</title>-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         
+        <!--bootstrap css-->
+        <link href="/static/media/css/bootstrap.css" rel="stylesheet">
+        <!--bootstrap responsive css-->
+        <link href="/static/media/css/bootstrap-responsive.css" rel="stylesheet">
+         
+        <!--Okvee Bootstrap sidebar menu-->
+        <link href="/static/media/css/obsm.css" rel="stylesheet">
+        <!--OBSM responsive css-->
+        <link href="/static/media/css/obsm-responsive.css" rel="stylesheet">
+         
+        <!--demo page style-->
+        <link href="/static/media/css/demo1.css" rel="stylesheet">
+         
+        <!--jquery cdn-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+         
+        <!--Okvee Bootstrap sidebar menu js-->
+        <script src="/static/media/js/obsm.js"></script>
+         
+        <!--add html5 support for ancient browser like IE.-->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+         
+    {% endblock javascript %}
+   {% block content %} 
+                <div style="clear:both;">&nbsp;</div>
+        <div style="clear:both;">&nbsp;</div>
+        <div style="clear:both;">&nbsp;</div>
+        <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <!--<li class="nav-header"><a href="/Brochures">Brochures</a></li>-->
+              <li class="active"><a href="/Banners">Banners</a></li>
+              <li><a href="/Calendars">Calendars</a></li>
+              <li><a href="/Catalogs-Booklets">Catalogs & Booklets</a></li>
+              <li><a href="/Cards">Christmas/BirthDay Cards</a></li>
+              <li><a href="/Flyers-Mailers">Flyers & Mailers</a></li>
+              <li><a href="/Greeting-Cards">Greeting Cards</a></li>
+              <li><a href="/Marketing-Cards">Marketing Cards & Promoters</a></li>
+              <li><a href="/Posters">Posters</a></li>
+              <li><a href="/Presentation-Folders">Presentation Folders & Wallets</a></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+
+
+		<div class="span9">
+                    <div class="content-wrapper">
+                        <h1>Catalogs & Booklets</h1>
+		<p><strong><img alt="" src="/static/media/img/CataloguesandBrochures3.gif" style="width:509px;height:148px;" /></strong></p>
+
+<p><strong>They say first impressions count, so be sure to make a strong statement with your business literature, conference brochures, catalogues and product guides.</strong></p>
+
+<p>Your print communication products can be produced in either black and white or <a href="/quality-print">high definition</a> colour for added impact, and with the latest developments in <a href="/on-demand-print">digital printing</a>, you can now get your hands on what you need when you need it - without worrying about minimum orders. Digital's flexibility also opens up a host of exciting personalisation options.</p>
+
+<p>Our specialist finishing teams can offer a wide range of booklet making and binding options including saddle stitch binding, ring binding, spiral binding, perfect bound, and hole punching.</p>
+
+<p>And if you're short on ideas, don't worry - our copywriting and <a href="/creative-design">design experts</a> can also sprinkle some magic on your catalogue or booklet to make it read as slick and professional as it looks. </p>
+
+<p>We're confident that we'll find the right solution for you and your budget, so <a href="/locator">contact your local Worldwide Centre</a> to get started on your next project.</p>
+		</div>
+                </div>
+                <div class="span12">
+                    <div class="footer-bar"><a href="http://www.okvee.net">O</a><a href="http://twitter.github.com/bootstrap/">B</a>SM.</div>
+                </div>
+            </div><!--.row-->
+        </div><!--.container-->
+         
+         
+        <script>
+            $(function() {
+                // activate the OBSM sub-menu icon
+                $('.obsm').obsm();
+            });
+        </script>
+         
+         
+    {% endblock content %}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+	{% block page_title %} Okvee Bootstrap sidebar menu {% endblock page_title %}
+        {% block javascript %} 
+        <meta charset="utf-8">
+       <!-- <title>Okvee Bootstrap sidebar menu</title>-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         
+        <!--bootstrap css-->
+        <link href="/static/media/css/bootstrap.css" rel="stylesheet">
+        <!--bootstrap responsive css-->
+        <link href="/static/media/css/bootstrap-responsive.css" rel="stylesheet">
+         
+        <!--Okvee Bootstrap sidebar menu-->
+        <link href="/static/media/css/obsm.css" rel="stylesheet">
+        <!--OBSM responsive css-->
+        <link href="/static/media/css/obsm-responsive.css" rel="stylesheet">
+         
+        <!--demo page style-->
+        <link href="/static/media/css/demo1.css" rel="stylesheet">
+         
+        <!--jquery cdn-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+         
+        <!--Okvee Bootstrap sidebar menu js-->
+        <script src="/static/media/js/obsm.js"></script>
+         
+        <!--add html5 support for ancient browser like IE.-->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+         
+    {% endblock javascript %}
+   {% block content %} 
+                <div style="clear:both;">&nbsp;</div>
+        <div style="clear:both;">&nbsp;</div>
+        <div style="clear:both;">&nbsp;</div>
+        <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <!--<li class="nav-header"><a href="/Brochures">Brochures</a></li>-->
+              <li class="active"><a href="/Graphic-Design">Graphic Design</a></li>
+              <li><a href="/Worldwide-Creations">Worldwide Creations</a></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+
+
+		<div class="span9">
+                    <div class="content-wrapper">
+                        <h1>Graphic Design</h1>
+		<p><img alt="Graphic Design" src="/static/media/img/GraphicDesign(1).jpg" style="width:509px;height:300px;" /></p>
+
+<p><strong>You know you don't get a second chance to make that first impression, so leave the graphic design to us!</strong></p>
+
+<p>Our national network of over 200 professional graphic designers provides us with the oxygen we need to grow.</p>
+
+<p>We'll take a brief, choose the best colours and fonts, strike the ideal layout and balance, and show you how you can apply the way you look across all your corporate material from stationery to annual reports.</p>
+		</div>
+                </div>
+                <div class="span12">
+                    <div class="footer-bar"><a href="http://www.okvee.net">O</a><a href="http://twitter.github.com/bootstrap/">B</a>SM.</div>
+                </div>
+            </div><!--.row-->
+        </div><!--.container-->
+         
+         
+        <script>
+            $(function() {
+                // activate the OBSM sub-menu icon
+                $('.obsm').obsm();
+            });
+        </script>
+         
+         
+    {% endblock content %}

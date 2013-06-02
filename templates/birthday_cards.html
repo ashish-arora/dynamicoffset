@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+	{% block page_title %} Okvee Bootstrap sidebar menu {% endblock page_title %}
+        {% block javascript %} 
+        <meta charset="utf-8">
+       <!-- <title>Okvee Bootstrap sidebar menu</title>-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         
+        <!--bootstrap css-->
+        <link href="/static/media/css/bootstrap.css" rel="stylesheet">
+        <!--bootstrap responsive css-->
+        <link href="/static/media/css/bootstrap-responsive.css" rel="stylesheet">
+         
+        <!--Okvee Bootstrap sidebar menu-->
+        <link href="/static/media/css/obsm.css" rel="stylesheet">
+        <!--OBSM responsive css-->
+        <link href="/static/media/css/obsm-responsive.css" rel="stylesheet">
+         
+        <!--demo page style-->
+        <link href="/static/media/css/demo1.css" rel="stylesheet">
+         
+        <!--jquery cdn-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+         
+        <!--Okvee Bootstrap sidebar menu js-->
+        <script src="/static/media/js/obsm.js"></script>
+         
+        <!--add html5 support for ancient browser like IE.-->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+         
+    {% endblock javascript %}
+   {% block content %} 
+                <div style="clear:both;">&nbsp;</div>
+        <div style="clear:both;">&nbsp;</div>
+        <div style="clear:both;">&nbsp;</div>
+        <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <!--<li class="nav-header"><a href="/Brochures">Brochures</a></li>-->
+              <li><a href="/Banners">Banners</a></li>
+              <li><a href="/Calendars">Calendars</a></li>
+              <li><a href="/Catalogs-Booklets">Catalogs & Booklets</a></li>
+              <li class="active"><a href="/Cards">Christmas/BirthDay Cards</a></li>
+              <li><a href="/Flyers-Mailers">Flyers & Mailers</a></li>
+              <li><a href="/Greeting-Cards">Greeting Cards</a></li>
+              <li><a href="/Marketing-Cards">Marketing Cards & Promoters</a></li>
+              <li><a href="/Posters">Posters</a></li>
+              <li><a href="/Presentation-Folders">Presentation Folders & Wallets</a></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+
+
+		<div class="span9">
+                    <div class="content-wrapper">
+                        <h1>Christmas/Birthday Cards</h1>
+		<p style="font-size: 13px; "><strong style="font-size: 13px; ">Choose an individual Christmas card design from our EXCLUSIVE range of 2012 Charity Christmas Cards then decide on the print specification to suit your budget, environmental values or style!</strong></p><p style="font-size: 13px; ">We donate 10 cents from every Christmas card sold from the Christmas Charity Range to <a href="http://www.projectfutures.com/">Project Futures</a>, help us to beat our previous record of $17,850 for this great cause.</p><h3>Ordering is easy!</h3><ol><li style="font-size: 13px; "><strong style="font-size: 13px; ">Get started by clicking on our 2012 Charity Christmas Card eBook above.</strong></li><li style="font-size: 13px; "><strong style="font-size: 13px; ">Choose from one of our standard greetings and font styles (page 4) or create your own.&nbsp;</strong><span style="font-size: 13px; ">Write your preference for wording and style (e.g Wording 2, Style 1) in the comment box in the quote request form).</span></li><li style="font-size: 13px; "><strong style="font-size: 13px; background-color: rgb(255, 255, 255); ">Choose your preferred Christmas card.&nbsp;</strong><span style="font-size: 13px; ">Select your preferred Christmas card design, click the corresponding request a quote link located below your chosen card, specify your desired card quantity, make a note of the greeting and style in the comment box and then hit submit. Before you know it your local Worldwide Centre will be in touch. It's that simple.</span></li></ol><h3>&nbsp;</h3><p style="font-size: 13px; ">Don't forget, you can upload your own design, or if you need some professional design help to turn your idea for a card into reality, we're here to help.</p><p style="font-size: 13px; "><strong>Have questions or perhaps can't see what you want? Simply&nbsp;<a href="/locator" style="font-size: 13px; ">contact your local Worldwide Centre</a>&nbsp;and we'll be sure to help.</strong></p><p style="font-size: 13px; ">&nbsp;</p><p style="font-size: 13px; ">&nbsp;</p>
+		</div>
+                </div>
+                <div class="span12">
+                    <div class="footer-bar"><a href="http://www.okvee.net">O</a><a href="http://twitter.github.com/bootstrap/">B</a>SM.</div>
+                </div>
+            </div><!--.row-->
+        </div><!--.container-->
+         
+         
+        <script>
+            $(function() {
+                // activate the OBSM sub-menu icon
+                $('.obsm').obsm();
+            });
+        </script>
+         
+         
+    {% endblock content %}

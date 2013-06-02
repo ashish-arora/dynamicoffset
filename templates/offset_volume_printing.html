@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+	{% block page_title %} Okvee Bootstrap sidebar menu {% endblock page_title %}
+        {% block javascript %} 
+        <meta charset="utf-8">
+       <!-- <title>Okvee Bootstrap sidebar menu</title>-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         
+        <!--bootstrap css-->
+        <link href="/static/media/css/bootstrap.css" rel="stylesheet">
+        <!--bootstrap responsive css-->
+        <link href="/static/media/css/bootstrap-responsive.css" rel="stylesheet">
+         
+        <!--Okvee Bootstrap sidebar menu-->
+        <link href="/static/media/css/obsm.css" rel="stylesheet">
+        <!--OBSM responsive css-->
+        <link href="/static/media/css/obsm-responsive.css" rel="stylesheet">
+         
+        <!--demo page style-->
+        <link href="/static/media/css/demo1.css" rel="stylesheet">
+         
+        <!--jquery cdn-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+         
+        <!--Okvee Bootstrap sidebar menu js-->
+        <script src="/static/media/js/obsm.js"></script>
+         
+        <!--add html5 support for ancient browser like IE.-->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+         
+    {% endblock javascript %}
+   {% block content %} 
+        <div class="container">
+            <div class="row">
+                <div class="span12 top-bar">
+                    <div class="brand">Okvee Bootstrap sidebar menu</div>
+                </div>
+                <div class="span3">
+                    <!--sidebar menu goes here-->
+                    <div class="menu-wrapper">
+                        <ul class="obsm">
+                            <li><a>Marketing Material</a>
+			       <ul>
+                                    <li><a>Brochures and Flyers</a></li>
+                                    <li><a>Marketing Cards</a></li>
+                                    <li><a>Folded Brochures</a></li>
+                                    <li><a>Magazines and Booklets</a></li>
+				</ul>
+					</li>
+                            <li><a>Corporate Branding</a>
+                                <ul>
+                                    <li><a>Business Cards</a></li>
+                                    <li><a>PostCards</a></li>
+                                    <li><a>Poster</a></li>
+                                    <li><a>Poster for Indoor</a></li>
+                                    <li><a>Presentation Folders</a></li>
+                                    <li><a>Stationary</a></li>
+				</ul>
+					</li>
+				    
+                                    <li><a>Calendar and Organizers</a>
+                                        <ul>
+                                            <li><a>Calendar</a></li>
+                                            <li><a>Flags</a></li>
+                                            <li><a>Fridge Calendar</a></li>
+                                        </ul>
+                                            </li>
+                                            <li><a>Outdoor Promotions</a></li>
+					<ul>
+					    <li><a>Advertising Barriers</a></li>
+					    <li><a>Full Color Vinyl Sticker</a></li>
+					    <li><a>Mesh Banner</a></li>
+					    <li><a>One Way Vision</a></li>
+					    <li><a>Outdoor Hi-Fi Digital Printing</a></li>
+					    <li><a>Poster</a></li>
+					    <li><a>Outdoor Vinyl Banner</a></li>
+					    <li><a>Signs and Billboards</a></li>
+					    <li><a>Wide Format Printing</a></li>
+					    <li><a>Vinyl Lettering</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a>Exhibition Events</a>
+					<ul>
+					<li><a>Exhibition Stand</a></li>
+                                        </ul>
+                                   </li>
+                            <li><a>Banner and Pull-ups</a>
+				<ul>
+				   <li><a>Curved and Flat Pull-Up Frame</a></li>
+				   <li><a>Double Sided Roll Up Stand</a></li>
+				   <li><a>Feather Bannner</a></li>
+				   <li><a>Pull up Banners</a></li>
+				</ul>
+			   </li>
+                    </div>
+                    <!--end sidebar menu-->
+                </div>
+                <div class="span9">
+                    <div class="content-wrapper">
+                        <h1>Offset Printing</h1>
+                   <p><strong>Offset Printing</strong> requires cost effectiveness and image quality. It excels for multicolour jobs that may require exact spot colour as well as full colour and other special printing effects. It<strong> </strong>is a commonly used printing technique in which the inked image is transferred from a plate to a rubber blanket, then to the printing surface.</p>
+<div style="text-align:center;"><img src="/static/media/img/offset.png" alt="" /></div>
+<p><strong>Offset Printing in Sydney</strong> tends to be more cost-effective for large-volume print runs play a vital role in the superiority of the printed output.</p>
+<p><strong>Offset Printing</strong> is also known as four-colour printing although there are many colours in the final output.  It’s one of the most common ways of creating printed matter that include newspapers, books, brochures, etc. It’s economical and requires little maintenance. Such printing techniques can be used on wood, leather, plastic, cloth, etc. The image quality is sharp and clean. With offset printing it is possible to use specialty inks and varnishes that are not available for the digital printing process.</p>
+<p>Offset Printing<strong> </strong>provides the following benefits:</p>
+<ol>
+<li>With excellent image quality the images are vibrant and crisp</li>
+<li>Direct to plate allows the press setup in minutes.</li>
+<li>As quantities go up, per piece cost goes down.</li>
+</ol>
+<p>The various possibilities of <strong>Offset Printing</strong> are digital printing, flyers, brochures, newsletters, presentation folders, envelopes, business cards, etc.</p></div>
+                </div>
+                <div class="span12">
+                    <div class="footer-bar"><a href="http://www.okvee.net">O</a><a href="http://twitter.github.com/bootstrap/">B</a>SM.</div>
+                </div>
+            </div><!--.row-->
+        </div><!--.container-->
+         
+         
+        <script>
+            $(function() {
+                // activate the OBSM sub-menu icon
+                $('.obsm').obsm();
+            });
+        </script>
+         
+         
+    {% endblock content %}

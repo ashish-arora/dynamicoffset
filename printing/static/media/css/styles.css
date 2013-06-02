@@ -1,0 +1,96 @@
+div.wpcf7 {
+	margin: 0;
+	padding: 0;
+}
+
+div.wpcf7-response-output {
+	margin: 2em 0.5em 1em;
+	padding: 0.2em 1em;
+}
+
+div.wpcf7-mail-sent-ok {
+	border: 2px solid #398f14;
+}
+
+div.wpcf7-mail-sent-ng {
+	border: 2px solid #ff0000;
+}
+
+div.wpcf7-spam-blocked {
+	border: 2px solid #ffa500;
+}
+
+div.wpcf7-validation-errors {
+	border: 2px solid #f7e700;
+}
+
+span.wpcf7-form-control-wrap {
+	position: relative;
+}
+
+span.wpcf7-not-valid-tip {
+	position: absolute;
+	top: 20%;
+	left: 20%;
+	z-index: 100;
+	background: #fff;
+	border: 1px solid #ff0000;
+	font-size: 10pt;
+	width: 280px;
+	padding: 2px;
+}
+
+span.wpcf7-not-valid-tip-no-ajax {
+	color: #f00;
+	font-size: 10pt;
+	display: block;
+}
+
+span.wpcf7-list-item {
+	margin-left: 0.5em;
+}
+
+.wpcf7-display-none {
+	display: none;
+}
+
+div.wpcf7 img.ajax-loader {
+	border: none;
+	vertical-align: middle;
+	margin-left: 4px;
+}
+
+div.wpcf7 .watermark {
+	color: #888;
+}
+
+#quote_img_div{position:absolute;width:127px;top:0;right:0;z-index:100;height:119px;text-align:center;}#quote_form{font-size:13px;margin:auto;top:0;margin-top:-465px;display:none;padding:10px;height:448px;background-color:#403438;color:#FFF;}.wpcf7-not-valid-tip{color:#000}div.wpcf7-validation-errors{border:none !important}.contact-no{font-size:23px;position:absolute; float:right; right:235px; top:87px; color:#08145C; font-weight:bold}
+.social-icon-me .widget
+{
+margin-bottom:0px;
+}
+.social-icon-me{
+float:left; position:absolute;right:60px;top:82px;
+}
+
+
+/* Columns Layouts */
+.one-half { width: 48%; }
+.one-third { width: 30.66%; }
+.two-third { width: 65.33%; }
+.one-fourth { width: 22%; }
+.three-fourth { width: 74%; }
+.one-fifth { width: 16.8%; }
+.two-fifth { width: 37.6%; }
+.three-fifth { width: 58.4%; }
+.four-fifth { width: 79.2%; }
+.one-sixth { width: 13.33%; }
+.five-sixth { width: 82.67%; }
+
+.one-half, .one-third, .two-third, .three-fourth, .one-fourth, .one-fifth, .two-fifth, .three-fifth, .four-fifth, .one-sixth, .five-sixth { position: relative; margin-right: 4%; float: left; }
+.last { margin-right: 0!important; }
+
+.one-half + br, .one-third + br, .two-third + br, .one-fourth + br, .three-fourth + br, .one-fifth + br, .two-fifth + br, .three-fifth + br, .four-fifth + br, .one-sixth + br, .five-sixth + br { display: none!important; }
+
+
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+	{% block page_title %} Okvee Bootstrap sidebar menu {% endblock page_title %}
+        {% block javascript %} 
+        <meta charset="utf-8">
+       <!-- <title>Okvee Bootstrap sidebar menu</title>-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         
+        <!--bootstrap css-->
+        <link href="/static/media/css/bootstrap.css" rel="stylesheet">
+        <!--bootstrap responsive css-->
+        <link href="/static/media/css/bootstrap-responsive.css" rel="stylesheet">
+         
+        <!--Okvee Bootstrap sidebar menu-->
+        <link href="/static/media/css/obsm.css" rel="stylesheet">
+        <!--OBSM responsive css-->
+        <link href="/static/media/css/obsm-responsive.css" rel="stylesheet">
+         
+        <!--demo page style-->
+        <link href="/static/media/css/demo1.css" rel="stylesheet">
+         
+        <!--jquery cdn-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+         
+        <!--Okvee Bootstrap sidebar menu js-->
+        <script src="/static/media/js/obsm.js"></script>
+         
+        <!--add html5 support for ancient browser like IE.-->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+         
+    {% endblock javascript %}
+   {% block content %} 
+                <div style="clear:both;">&nbsp;</div>
+        <div style="clear:both;">&nbsp;</div>
+        <div style="clear:both;">&nbsp;</div>
+        <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <!--<li class="nav-header"><a href="/Brochures">Brochures</a></li>-->
+              <li><a href="/Banners">Banners</a></li>
+              <li class="active"><a href="/Calendars">Calendars</a></li>
+              <li><a href="/Catalogs-Booklets">Catalogs & Booklets</a></li>
+              <li><a href="/Cards">Christmas/BirthDay Cards</a></li>
+              <li><a href="/Flyers-Mailers">Flyers & Mailers</a></li>
+              <li><a href="/Greeting-Cards">Greeting Cards</a></li>
+              <li><a href="/Marketing-Cards">Marketing Cards & Promoters</a></li>
+              <li><a href="/Posters">Posters</a></li>
+              <li><a href="/Presentation-Folders">Presentation Folders & Wallets</a></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+
+
+		<div class="span9">
+                    <div class="content-wrapper">
+                        <h1>Calendars</h1>
+		<p><strong><img alt="Calendars" src="/static/media/img/Calendar.gif" style="width:213px;height:177px;margin-right:10px;margin-left:10px;float:right;" />Corporate calendars are cost-effective giveaways that keep your business<br />top-of-mind all year round.</strong></p>
+
+<p>Here’s a tip — you can start your calendar at any month of the year to fit in with your financial year, or to celebrate a specific milestone or anniversary.</p>
+
+<p>A printed calendar on the back of your business card will add impact and be more memorable</p>
+
+<p>With the latest developments in digital printing, you can get your hands on in-expensive, low quantity, high quality calendars in a range of sizes including <a href="/formats">A4</a>, <a href="/formats">A5</a>, <a href="/formats">DL</a>, <a href="/formats">bookmark</a>, <a href="/formats">desktop</a> and more. There's really no limit to what you can print: colour, black and white, varying quantities, personalised copies.</p>
+
+<p>Looking for A5 calendars, A4 calendars, promotional wall calendars, other sizes, different stock, or special finishes? Simply <a href="/locator">contact your nearest Worldwide Centre</a> or <a href="/node/add/quote">request a quote</a> for your calendar.</p>
+		</div>
+                </div>
+                <div class="span12">
+                    <div class="footer-bar"><a href="http://www.okvee.net">O</a><a href="http://twitter.github.com/bootstrap/">B</a>SM.</div>
+                </div>
+            </div><!--.row-->
+        </div><!--.container-->
+         
+         
+        <script>
+            $(function() {
+                // activate the OBSM sub-menu icon
+                $('.obsm').obsm();
+            });
+        </script>
+         
+         
+    {% endblock content %}

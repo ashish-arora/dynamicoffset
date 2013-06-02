@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+	{% block page_title %} Okvee Bootstrap sidebar menu {% endblock page_title %}
+        {% block javascript %} 
+        <meta charset="utf-8">
+       <!-- <title>Okvee Bootstrap sidebar menu</title>-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         
+        <!--bootstrap css-->
+        <link href="/static/media/css/bootstrap.css" rel="stylesheet">
+        <!--bootstrap responsive css-->
+        <link href="/static/media/css/bootstrap-responsive.css" rel="stylesheet">
+         
+        <!--Okvee Bootstrap sidebar menu-->
+        <link href="/static/media/css/obsm.css" rel="stylesheet">
+        <!--OBSM responsive css-->
+        <link href="/static/media/css/obsm-responsive.css" rel="stylesheet">
+         
+        <!--demo page style-->
+        <link href="/static/media/css/demo1.css" rel="stylesheet">
+         
+        <!--jquery cdn-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+         
+        <!--Okvee Bootstrap sidebar menu js-->
+        <script src="/static/media/js/obsm.js"></script>
+         
+        <!--add html5 support for ancient browser like IE.-->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+         
+    {% endblock javascript %}
+   {% block content %} 
+        <div class="container">
+            <div class="row">
+                <div class="span12 top-bar">
+                    <div class="brand">Okvee Bootstrap sidebar menu</div>
+                </div>
+                <div class="span3">
+                    <!--sidebar menu goes here-->
+                    <div class="menu-wrapper">
+                        <ul class="obsm">
+                            <li><a>Marketing Material</a>
+			       <ul>
+                                    <li><a>Brochures and Flyers</a></li>
+                                    <li><a>Marketing Cards</a></li>
+                                    <li><a>Folded Brochures</a></li>
+                                    <li><a>Magazines and Booklets</a></li>
+				</ul>
+					</li>
+                            <li><a>Corporate Branding</a>
+                                <ul>
+                                    <li><a>Business Cards</a></li>
+                                    <li><a>PostCards</a></li>
+                                    <li><a>Poster</a></li>
+                                    <li><a>Poster for Indoor</a></li>
+                                    <li><a>Presentation Folders</a></li>
+                                    <li><a>Stationary</a></li>
+				</ul>
+					</li>
+				    
+                                    <li><a>Calendar and Organizers</a>
+                                        <ul>
+                                            <li><a>Calendar</a></li>
+                                            <li><a>Flags</a></li>
+                                            <li><a>Fridge Calendar</a></li>
+                                        </ul>
+                                            </li>
+                                            <li><a>Outdoor Promotions</a></li>
+					<ul>
+					    <li><a>Advertising Barriers</a></li>
+					    <li><a>Full Color Vinyl Sticker</a></li>
+					    <li><a>Mesh Banner</a></li>
+					    <li><a>One Way Vision</a></li>
+					    <li><a>Outdoor Hi-Fi Digital Printing</a></li>
+					    <li><a>Poster</a></li>
+					    <li><a>Outdoor Vinyl Banner</a></li>
+					    <li><a>Signs and Billboards</a></li>
+					    <li><a>Wide Format Printing</a></li>
+					    <li><a>Vinyl Lettering</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a>Exhibition Events</a>
+					<ul>
+					<li><a>Exhibition Stand</a></li>
+                                        </ul>
+                                   </li>
+                            <li><a>Banner and Pull-ups</a>
+				<ul>
+				   <li><a>Curved and Flat Pull-Up Frame</a></li>
+				   <li><a>Double Sided Roll Up Stand</a></li>
+				   <li><a>Feather Bannner</a></li>
+				   <li><a>Pull up Banners</a></li>
+				</ul>
+			   </li>
+                    </div>
+                    <!--end sidebar menu-->
+                </div>
+                <div class="span9">
+                    <div class="content-wrapper">
+                        <h1>Brochures & Flyers</h1>
+ 			<div class="box-1" style="padding-top:10px;"><span class="orange_bigger_bold">Use colour</span> <span class="green_bigger_bold">-  colour</span> <span class="blue_bigger_bold">stands out</span><br />
+                        <p>Raise your company’s brand image through Print4Less customized high quality calendars. With the arrival of 2013 there’s no better way to decorate your home place, offices with calendars laced with creativity. This New Year our personalized calendars aim to bring you new hopes, new trends, new cheers and new colours to light up your every month.</p>
+<p><img style="float: right;" src="/static/media/img/calendars.jpg" alt="" /></p>
+<p>Despite the coming of advanced age with modern technologies, a calendar is an important necessity in today’s workplaces or home therefore Print4Less uses calendars to effectively promote brands the affordable way.</p>
+<p><b>Buy 2013 Calendars Online – Personalized Calendars</b> with superior quality printing at the best prices available in town. With calendar printing from Print4Less, you may advertise your services all year long with an innumerable variety of themes to choose from while customizing with the logo and text.</p>
+<p>Here, you have different styles of calendars to choose from a bulk of options tailor-made to suit your requirements.</p> 
+                    </div>
+                </div>
+                <div class="span12">
+                    <div class="footer-bar"><a href="http://www.okvee.net">O</a><a href="http://twitter.github.com/bootstrap/">B</a>SM.</div>
+                </div>
+            </div><!--.row-->
+        </div><!--.container-->
+         
+         
+        <script>
+            $(function() {
+                // activate the OBSM sub-menu icon
+                $('.obsm').obsm();
+            });
+        </script>
+         
+         
+    {% endblock content %}

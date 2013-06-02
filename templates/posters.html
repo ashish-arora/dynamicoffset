@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+	{% block page_title %} Okvee Bootstrap sidebar menu {% endblock page_title %}
+        {% block javascript %} 
+        <meta charset="utf-8">
+       <!-- <title>Okvee Bootstrap sidebar menu</title>-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         
+        <!--bootstrap css-->
+        <link href="/static/media/css/bootstrap.css" rel="stylesheet">
+        <!--bootstrap responsive css-->
+        <link href="/static/media/css/bootstrap-responsive.css" rel="stylesheet">
+         
+        <!--Okvee Bootstrap sidebar menu-->
+        <link href="/static/media/css/obsm.css" rel="stylesheet">
+        <!--OBSM responsive css-->
+        <link href="/static/media/css/obsm-responsive.css" rel="stylesheet">
+         
+        <!--demo page style-->
+        <link href="/static/media/css/demo1.css" rel="stylesheet">
+         
+        <!--jquery cdn-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+         
+        <!--Okvee Bootstrap sidebar menu js-->
+        <script src="/static/media/js/obsm.js"></script>
+         
+        <!--add html5 support for ancient browser like IE.-->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+         
+    {% endblock javascript %}
+   {% block content %} 
+                <div style="clear:both;">&nbsp;</div>
+        <div style="clear:both;">&nbsp;</div>
+        <div style="clear:both;">&nbsp;</div>
+        <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3">
+          <div class="well sidebar-nav">
+            <ul class="nav nav-list">
+              <!--<li class="nav-header"><a href="/Brochures">Brochures</a></li>-->
+              <li><a href="/Banners">Banners</a></li>
+              <li><a href="/Calendars">Calendars</a></li>
+              <li><a href="/Catalogs-Booklets">Catalogs & Booklets</a></li>
+              <li><a href="/Cards">Christmas/BirthDay Cards</a></li>
+              <li><a href="/Flyers-Mailers">Flyers & Mailers</a></li>
+              <li><a href="/Greeting-Cards">Greeting Cards</a></li>
+              <li><a href="/Marketing-Cards">Marketing Cards & Promoters</a></li>
+              <li class= "active"><a href="/Posters">Posters</a></li>
+              <li><a href="/Presentation-Folders">Presentation Folders & Wallets</a></li>
+            </ul>
+          </div><!--/.well -->
+        </div><!--/span-->
+
+
+		<div class="span9">
+                    <div class="content-wrapper">
+                        <h1>Posters</h1>
+		<p><img alt="Large format poster printing" src="/static/media/img/PosterPrinting2.jpg" style="width:250px;height:279px;float:right;" /><strong>Bigger sometimes is better!</strong></p>
+
+<p>Worldwide offers a range of poster options including A0, A1, and A2 posters for conferences, outdoor billboards, or anything in between - we have full range of poster printing options that are suitable for indoors and outdoors on a variety of stock.</p>
+
+<p>Print with us and gain access to our large range of mounting options including Corflute, Forex (PVC), Cardboard and Foamboard or choose from our range of attention grabbing poster grips and click frame hanging solutions.</p>
+
+<p>Common Poster Sizes:</p>
+
+<ul><li>A0 - 1188 x 840mm</li><li>A1 - 840 x 594mm</li><li>A2 - 594 x 420mm</li></ul>
+
+<p>For more information about large format and poster printing simply <a href="http://worldwide.itomicpowered.com/node/add/quote">request a quote</a> today or <a href="/locator">contact</a><a href="/locator"> your local Worldwide Centre</a>.</p>
+		</div>
+                </div>
+                <div class="span12">
+                    <div class="footer-bar"><a href="http://www.okvee.net">O</a><a href="http://twitter.github.com/bootstrap/">B</a>SM.</div>
+                </div>
+            </div><!--.row-->
+        </div><!--.container-->
+         
+         
+        <script>
+            $(function() {
+                // activate the OBSM sub-menu icon
+                $('.obsm').obsm();
+            });
+        </script>
+         
+         
+    {% endblock content %}

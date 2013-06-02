@@ -1,0 +1,39 @@
+#pl_client_logos {
+	float:left;
+	width:100%;
+	}
+
+
+#pl_client_logos ul {
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	}
+
+
+#pl_client_logos ul li {
+	display:inline;
+	}
+
+
+#pl_client_logos {
+	width:1150px;
+	padding-left:10px;
+	padding-right:10px;
+	min-height:74px;
+	margin-top:12px;
+	padding-top:21px;
+	margin-left:-10px;
+	background:url(/static/media/img/client_logo_bg.jpg) repeat-x center center #f0f0f0;
+
+	}
+
+#pl_client_logos ul li {
+	float:left;
+	height:53px;
+	min-width:77px;
+	padding:0 14px 0 15px;
+	}
+
+
+
