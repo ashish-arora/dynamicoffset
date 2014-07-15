@@ -20,7 +20,7 @@ if INSTALL_DIR not in PATH:
 APP_DIR = os.path.dirname( globals()['__file__'] )
 
 MANAGERS = ADMINS
-"""
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
@@ -42,7 +42,7 @@ DATABASES = {
         'PORT': os.environ['RDS_PORT'],
     }
 }
-
+"""
 environ.setdefault('DJANGO_MEDIA_ROOT', join(INSTALL_DIR, 'media/'))
 environ.setdefault('DJANGO_MEDIA_URL', '/media/')
 
@@ -83,6 +83,7 @@ MEDIA_URL = ''
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/home/media/media.lawrence.com/static/"
 STATIC_ROOT = ''
+#STATIC_ROOT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), 'static')
 
 # URL prefix for static files.
 # Example: "http://media.lawrence.com/static/"

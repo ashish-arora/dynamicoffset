@@ -5,7 +5,6 @@ from django.conf.urls.defaults import patterns, include, url
 # admin.autodiscover()
 
 urlpatterns = patterns('',
-    url(r'^$', 'printing.views.home'),
     url(r'^Worldwide-Creations/$', 'printing.views.worldwide_creations'),
     url(r'^Brochures/$', 'printing.views.brochures'),
     url(r'^Business-Cards/$', 'printing.views.business_cards'),
@@ -36,6 +35,7 @@ urlpatterns = patterns('',
     url(r'^Contact-Us/$', 'printing.views.contact_us'),
     url(r'^Request-Quote/$', 'printing.views.request_quote'),
     url(r'^home/$', 'printing.views.home'),
+    url(r'^$', 'printing.views.home'),
     # Examples:
     # url(r'^$', 'offset.views.home', name='home'),
     # url(r'^offset/', include('offset.foo.urls')),
