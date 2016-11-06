@@ -2,6 +2,7 @@
 from django.shortcuts import render_to_response
 from django.template import RequestContext
 import ipdb
+from printing.mailer import send_mail
 
 def home(request):
 	return render_to_response('home_page.html',{},
@@ -94,7 +95,7 @@ def contact_us(request):
 def worldwide_creations(request):
 	return render_to_response('worldwide_creations.html',{},
                               context_instance=RequestContext(request))
-def send_email(SUBJECT,TEXT):
+def send_email_new(SUBJECT,TEXT):
 	import smtplib
         gmail_user = "junuarora@gmail.com"
         gmail_pwd = "jyotiarora29"
@@ -122,7 +123,6 @@ def send_email(SUBJECT,TEXT):
 def request_quote(request):
 	result = ""
 	if request.POST:
-		ipdb.set_trace()
 		comments = request.REQUEST.get("comments","")
 		email= request.REQUEST.get("email","")
 		company= request.REQUEST.get("company","")
@@ -130,6 +130,6 @@ def request_quote(request):
 		required_date= request.REQUEST.get("required_date","")
 		product= request.REQUEST.get("custom_product","")
 		name= request.REQUEST.get("name","")
-		result = send_email(email,comments)	
+		result = send_mail(email,'junuarora@gmail.com', comments)	
 	return render_to_response('request_quote.html',{'result':result},
                               context_instance=RequestContext(request))

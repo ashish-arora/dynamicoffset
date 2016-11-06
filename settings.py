@@ -21,7 +21,7 @@ APP_DIR = os.path.dirname( globals()['__file__'] )
 
 MANAGERS = ADMINS
 
-DATABASES = {
+"""DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': 'dynamic',                      # Or path to database file if using sqlite3.
@@ -30,7 +30,7 @@ DATABASES = {
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
     }
-}
+}"""
 """
 DATABASES = {
     'default': {
@@ -127,7 +127,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
 )
 
-ROOT_URLCONF = 'offset.urls'
+ROOT_URLCONF = 'dynamicoffset.urls'
 
 TEMPLATE_DIRS = (
 	os.path.join( APP_DIR, 'templates' )
